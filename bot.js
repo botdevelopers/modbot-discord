@@ -258,9 +258,7 @@ client.on('message', msg => {
 
 // Yukarısı Bot Bilgi
 
-if (msg.author.id !== ayarlar.sahip) {
-      msg.reply('Benim yapımcım değilsin!');
-    } else {
+
 client.on('message', msg => {
   if (msg.content === prefix + 'sunuculist') {
     msg.channel.sendMessage("Botun Olduğu Sunucular:")
@@ -269,7 +267,6 @@ client.on('message', msg => {
     })
   }
 });
-    }
 
 
 client.on('message', msg => {
