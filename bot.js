@@ -260,7 +260,19 @@ client.on('message', msg => {
     })
   }
 });
-	
+
+
+
+client.on('message', msg => {
+  if (msg.content === prefix + '') {
+    msg.channel.sendMessage('https://philipyip.files.wordpress.com/2017/04/startupissue2.gif');
+  }
+});
+
+
+
+
+
 /**
 client.on('message', msg => {
   if (msg.content === prefix + '') {
