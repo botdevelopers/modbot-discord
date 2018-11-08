@@ -264,7 +264,7 @@ client.on('message', msg => {
 
 
 client.on('message', msg => {
-  if (msg.content === prefix + '') {
+  if (msg.content === prefix + 'win10') {
     msg.channel.sendMessage('https://philipyip.files.wordpress.com/2017/04/startupissue2.gif');
   }
 });
