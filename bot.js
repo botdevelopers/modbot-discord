@@ -31,6 +31,12 @@ client.on('message', message => {
   }
 });
 
+client.on('message', message => {
+  if (message.content === 'avatarım') {
+    message.channel.sendMessage(message.author.avatarURL);
+  }
+});
+
 // Yardım Komutları
 client.on('message', msg => {
   if (msg.content === prefix + 'yardım') {
@@ -252,6 +258,9 @@ client.on('message', msg => {
 
 // Yukarısı Bot Bilgi
 
+if (msg.author.id !== ayarlar.sahip) {
+      msg.reply('Benim yapımcım değilsin!');
+    } else {
 client.on('message', msg => {
   if (msg.content === prefix + 'sunuculist') {
     msg.channel.sendMessage("Botun Olduğu Sunucular:")
@@ -260,7 +269,7 @@ client.on('message', msg => {
     })
   }
 });
-
+    }
 
 
 client.on('message', msg => {
