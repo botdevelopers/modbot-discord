@@ -139,7 +139,7 @@ client.on('message', message => {
       }
     // Otherwise, if no user was mentioned
     } else {
-      message.channel.sendMessage('Bir Kullanıcıyı Sunucudan Atmak İçin Kullanıcıyı Etiketlemen Gerek!');
+      message.channel.sendMessage('Bir Kullanıcıyı Sunucudan **Atmak** İçin Kullanıcıyı Etiketlemen Gerek!');
     }
   }
 });
@@ -187,7 +187,7 @@ client.on('message', message => {
       }
     } else {
     // Otherwise, if no user was mentioned
-      message.reply('Bir Kullanıcıyı **Atmak** İçin Kullanıcıyı Etiketlemen Gerek!');
+      message.reply('Bir Kullanıcıyı **Yasaklamak** İçin Kullanıcıyı Etiketlemen Gerek!');
     }
   }
 });
